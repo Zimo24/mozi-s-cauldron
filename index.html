@@ -1,1 +1,47 @@
-<img src="Your paragraph text (1).png" alt="How?">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .text {
+            font-size: 2em;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 2s ease-in-out forwards;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+  <p>Turn on sound</p>
+
+  <img src="Your paragraph text (1).png" alt="How?" style="width: 90vw">
+    <audio autoplay controls loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+<div><p>Thanks to <a href="https://www.fesliyanstudios.com/royalty-free-music/downloads-c/cafe-music/102">Fesilyanstudios</a> for the great music!</p></div>
+</body>
+</html>
